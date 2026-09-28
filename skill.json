@@ -1,0 +1,28 @@
+{
+  "name": "genpark-agent-json-schema-auto-repair-skill",
+  "version": "1.0.0",
+  "description": "Instant zero-LLM deterministic JSON extractor & schema auto-repair engine healing truncated braces, markdown wrappers & invalid types.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "json-repair",
+    "instructor",
+    "structured-output",
+    "pydantic",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "repair_malformed_json",
+      "description": "Heal truncated braces, single quotes, and markdown backticks without LLM round-trips."
+    },
+    {
+      "name": "coerce_to_schema",
+      "description": "Cast string numbers to integers/floats and sanitize enum values."
+    },
+    {
+      "name": "run_benchmark_schema_repair",
+      "description": "Benchmark schema healing accuracy across common LLM failure modes."
+    }
+  ]
+}
